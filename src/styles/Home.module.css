@@ -16,10 +16,44 @@
   border-radius: 5px;
 }
 
+.nav h6{
+  text-align: center;
+  font-size: 15px;
+  padding: 5px;
+}
+
 .cardContainer{
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   justify-content: center;
+  margin: 20px 0px;
+  border-radius: 10px; 
+  padding: 10px;
+}
+
+.buttonsContainer{
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.buttonsContainer button{
+  padding: 5px;
+  margin-left: 5px;
+  background-color: #ffffff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.buttonsContainer button:hover{
+  padding: 5px;
+  margin-left: 5px;
+  background-color: #c7c7c773;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.tableContainer{
+  display: grid;
   margin: 20px 0px;
   border-radius: 10px; 
   padding: 10px;
@@ -36,9 +70,3 @@ body{
   user-select: none;
 }
 
-.tableContainer{
-  display: grid;
-  margin: 20px 0px;
-  border-radius: 10px; 
-  padding: 10px;
-}

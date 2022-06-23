@@ -103,7 +103,6 @@ td{
 } 
 
 
-
 .listName{
   display: grid;
   grid-template-columns: auto auto;
@@ -115,6 +114,8 @@ td{
   font-weight: bold;
   padding: 5px 10px;
 }
+
+
 
 /*
 .lista3 li:before{
