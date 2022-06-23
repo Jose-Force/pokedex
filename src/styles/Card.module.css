@@ -1,0 +1,85 @@
+.card{
+  margin: 0.5rem;
+  height: 220px;
+  width: 180px;
+  border: solid 1px #14213d;
+  background-color: #14213d1a;
+  box-shadow: 3px 3px 5px #294c978a;
+}
+
+.cardName{
+  text-align: center;
+  margin: 5px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
+
+.cardImg {
+  padding: 10px;
+  width: 120px;
+  height: 120px;
+  display:block;
+  margin: auto;
+}
+
+.cardFount {
+ background-color: #ffffff70; 
+  /* border: solid 5px #14213d; */
+}
+
+.cardTypes {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+}
+
+.cardTypesh3{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content:space-around;
+  color:#14213d;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0px 20px 0px 20px;
+  margin: 2px;
+  text-transform: capitalize;
+}
+
+.card:hover {
+  filter: brightness(125%);
+  cursor: pointer;
+  transform: scale(1.08)
+}
+
+/* .logoTypes{
+  display: grid;
+  align-items: center;
+  margin: 5px;
+  height: 20px;
+  width: 20px;
+} */
+
+table {
+  font-size: 20px;
+}
+
+td{
+  border: solid 1px #14213d;
+  padding: 10px;
+}
+
+.tableTitle{
+  background-color: #000000bf;
+  color: white;
+}
+
+
+.tableContainer{
+  /* border: solid 1px; */
+  width: 70%;
+  text-align: center;
+}
+
+.tableTr{
+ text-transform: capitalize;
+}
