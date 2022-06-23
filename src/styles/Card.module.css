@@ -83,3 +83,68 @@ td{
 .tableTr{
  text-transform: capitalize;
 }
+
+/*--------------------------------------------------------------------------*/
+
+
+.containerList li{
+  margin: 0 .5em 1.5em 0.5em;
+  background: #e5e5e5b0;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 10px;
+  list-style: none; 
+}
+
+.containerList li:hover{
+  left: -.5em;
+  border-left-color: #fa8072;    
+  background: #e5e5e563;       
+} 
+
+
+
+.listName{
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content:flex-start;
+  text-transform: capitalize;
+}
+
+.listName div{
+  font-weight: bold;
+  padding: 5px 10px;
+}
+
+/*
+.lista3 li:before{
+  content: counter(li);
+  counter-increment: li;
+  position: absolute; 
+  left: -2.5em;
+  top: 50%;
+  margin-top: -1em;
+  background: #fa8072;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+.lista3 li:after{
+  position: absolute; 
+  content: '';
+  border: .5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -.5em;
+  transition: all .3s ease-out;               
+}
+
+.lista3 li:hover:after{
+  left: -.5em;
+  border-left-color: #fa8072;             
+}
+
+*/

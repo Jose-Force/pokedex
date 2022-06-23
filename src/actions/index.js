@@ -3,7 +3,7 @@ import axios from "axios";
 export function getPokemons(){ //se trae todos los pokemon
   return async function(dispatch){
     try {
-      const resultUrl = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=150&offset=1');
+      const resultUrl = await axios.get('https://pokeapi.co/api/v2/pokemon?limit=150&offset=0');
       const allPokemons = resultUrl.data.results; //Me traigo las url de los 150 pokemons
   
       const allInfo = await Promise.all(
