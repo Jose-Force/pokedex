@@ -6,8 +6,6 @@ import CardGalery from './CardGalery';
 import CardTable from './CardTable';
 import CardList from './CardList';
 import styles from '../styles/Home.module.css'
-import {Link,} from 'react-router-dom';
-import axios from 'axios';
 import Details from './Detail';
 
 export default function Home (){
@@ -29,15 +27,14 @@ export default function Home (){
   function handleClickClose(e){
     e.preventDefault();
     dispatch(setModal(false))
+    dispatch(getDetail())
   }
 
   const openDetail = async (id) =>{
     dispatch(setModal('pokeDetail'))
     setConf(id) 
-    getDetail()
   }
 
-  console.log(modal)
   return (
     <div className={styles.container}>
       {modal ? <Details id = {conf} handleClickClose = {handleClickClose}/> : null}
@@ -67,8 +64,6 @@ export default function Home (){
         }) } 
         </div>
       } 
-
-      
     </div>
   )
 }

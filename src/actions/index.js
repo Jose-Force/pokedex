@@ -50,7 +50,7 @@ export const setModal = (modal) =>{
 export function getDetail(id){
   return async function(dispatch){
     const allInfo = await getApiInfo()
-    const pokemonId = allInfo.filter(pokeId => pokeId.id == id);
+    const pokemonId = allInfo.filter(pokeId => pokeId.id === id);
     return dispatch({
       type: 'GET_DETAILS',
       payload: pokemonId
