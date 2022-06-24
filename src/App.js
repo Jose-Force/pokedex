@@ -1,5 +1,6 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Home from './components/Home';
+import Detail from './components/Detail';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <div>
         <Routes> 
           <Route path='/' element = {<Home />} />
+          <Route path='/:id' element={<Detail/>} />
         </Routes>
       </div>
     </BrowserRouter>

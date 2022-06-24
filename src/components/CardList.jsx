@@ -1,14 +1,14 @@
 import React from "react";
 import styles from '../styles/Card.module.css'
 
-export default function CardList({allPokemons}){
+export default function CardList({allPokemons, openDetail}){
 
   return(
     <div>
       {
         allPokemons.map(e =>{
           return(
-            <div className={styles.containerList} key = {e.id}>
+            <div className={styles.containerList} key = {e.id} onClick={()=> openDetail(e.id)}>
               <li>
                 <div className={styles.listName}><div>#{e.id}</div><div>{e.name}</div></div>
                 <ol>

@@ -1,10 +1,12 @@
 
 const initialState = {
-  pokemon : []
+  pokemon : [],
+  detail: [],
+  modal: ''
 }
 
 function pokeReducer (state = initialState, action){
-
+  
   switch (action.type){ 
 
     case 'GET_POKEMONS': 
@@ -12,7 +14,17 @@ function pokeReducer (state = initialState, action){
         ...state,
         pokemon : action.payload,
       }
-     
+    case 'GET_DETAILS':
+      return {
+          ...state,
+          detail : action.payload
+      }
+    case "SET_MODAL" :
+      return{
+        ...state,
+        modal : action.payload
+      }
+
     default : return state;
   }
 

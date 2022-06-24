@@ -1,8 +1,8 @@
 import React from "react";
 import styles from '../styles/Card.module.css'
 
-export default function CardTable({allPokemons}){
-
+export default function CardTable({allPokemons, openDetail}){
+  
   return(
     <div>
       <table className={styles.tableContainer}>
@@ -16,7 +16,7 @@ export default function CardTable({allPokemons}){
           {
             allPokemons.map(e =>{
               return(
-                <tr key= {e.id} className={styles.tableTr}>
+                 <tr key= {e.id} className={styles.tableTr} onClick={()=> openDetail(e.id)}>
                   <td>{e.id}</td>
                   <td>{e.name}</td>
                   <td>{e.weight / 10}</td>
